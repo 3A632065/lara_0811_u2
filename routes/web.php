@@ -40,3 +40,8 @@ Route::get('say/{name?}', ['as' => 'hello.index', function($name= 'Everybody') {
 Route::get('welcome/{name?}', function($name='Everybody') {
     return 'Welcome, '.$name;
 });
+
+// 設定 dashboard 路徑的 Route
+Route::get('dashboard', function() {
+    return 'dashboard';
+});
