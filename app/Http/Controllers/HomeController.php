@@ -13,7 +13,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return 'index';         //編輯 HomeController的內容
+        //return 'index';         //編輯 HomeController的內容
+
+        return view('welcome');     //設定回傳預設首頁
     }
 
     /**
