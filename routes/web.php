@@ -19,3 +19,8 @@ Route::get('/', function () {
     return redirect('welcome');     //設定 Route 跳轉頁面
 
 });
+
+//修改 Route 接受參數
+Route::get('hello/{xinru}', function($xinru) {
+    return 'Hello, '.$xinru;
+});
