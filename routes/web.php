@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');         //設定 Route 回傳字串
+
+    return view('welcome');          //設定 Route 回傳 view
+    
 });
