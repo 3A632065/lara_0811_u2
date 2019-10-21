@@ -14,6 +14,8 @@
 Route::get('/', function () {
     //return view('welcome');         //設定 Route 回傳字串
 
-    return view('welcome');          //設定 Route 回傳 view
-    
+    //return view('welcome');          //設定 Route 回傳 view
+
+    return redirect('welcome');     //設定 Route 跳轉頁面
+
 });
