@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 //修改 Route 接受參數
-Route::get('hello/{xinru}', function($xinru) {
-    return 'Hello, '.$xinru;
+Route::get('hello/{name}', function($name) {
+    return 'Hello, '.$name;
 });
+
