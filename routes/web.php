@@ -29,3 +29,8 @@ Route::get('hello/{name}', function($name) {
 Route::get('hello/{name?}', function($name='Everybody') {
     return 'Hello, '.$name;
 });
+
+//新增一個Route
+Route::get('welcome/{name?}', function($name='Everybody') {
+    return 'Welcome, '.$name;
+});
