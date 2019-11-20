@@ -12,16 +12,15 @@
 */
 
 Route::get('/',['as'=>'home.index','uses'=> 'HomeController@index']);
-
+/*
 Route::get('/', function () {
     //return 'welcome';                //設定 Route 回傳字串
 
     return view('welcome');          //設定 Route 回傳 view
 
     //return redirect('welcome');     //設定 Route 跳轉頁面
-
 });
-
+*/
 //修改 Route 接受參數
 Route::get('hello/{name}', function($name) {
     return 'Hello, '.$name;
